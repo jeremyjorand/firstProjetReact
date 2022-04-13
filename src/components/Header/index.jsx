@@ -1,0 +1,24 @@
+import logo from './logo.jpg';
+import SHeader from './style';
+import { Link } from 'react-router-dom';
+
+function Header() {
+  return (
+    <SHeader>
+      <section>
+        <img src={logo} />
+        <h1>First-Projet-React</h1>
+        <img src={logo} />
+      </section>
+      <nav>
+        <Link to='/PictureChoice'>Choix d'image</Link>
+        <Link to='/Form'>Formulaire</Link>
+        <Link to='/PierreFeilleCiseaux'>Pierre - Feuille - Ciseaux</Link>
+        <Link to='/Ring'>Carte Heros</Link>
+        <Link to='/Fight'>Combat</Link>
+      </nav>
+    </SHeader>
+  );
+}
+
+export default Header;

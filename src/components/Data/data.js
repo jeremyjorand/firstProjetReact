@@ -1,0 +1,450 @@
+const heros = [
+  {
+    response: 'success',
+    id: '70',
+    name: 'Batman',
+    powerstats: {
+      intelligence: '100',
+      strength: '26',
+      speed: '27',
+      durability: '50',
+      power: '47',
+      combat: '100',
+    },
+    biography: {
+      'full-name': 'Bruce Wayne',
+      'alter-egos': 'No alter egos found.',
+      aliases: ['Insider', 'Matches Malone'],
+      'place-of-birth': 'Crest Hill, Bristol Township; Gotham County',
+      'first-appearance': 'Detective Comics #27',
+      publisher: 'DC Comics',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Human',
+      height: ["6'2", '188 cm'],
+      weight: ['210 lb', '95 kg'],
+      'eye-color': 'blue',
+      'hair-color': 'black',
+    },
+    work: {
+      occupation: 'Businessman',
+      base: 'Batcave, Stately Wayne Manor, Gotham City; Hall of Justice, Justice League Watchtower',
+    },
+    connections: {
+      'group-affiliation':
+        'Batman Family, Batman Incorporated, Justice League, Outsiders, Wayne Enterprises, Club of Heroes, formerly White Lantern Corps, Sinestro Corps',
+      relatives:
+        'Damian Wayne (son), Dick Grayson (adopted son), Tim Drake (adopted son), Jason Todd (adopted son), Cassandra Cain (adopted ward)\nMartha Wayne (mother, deceased), Thomas Wayne (father, deceased), Alfred Pennyworth (former guardian), Roderick Kane (grandfather, deceased), Elizabeth Kane (grandmother, deceased), Nathan Kane (uncle, deceased), Simon Hurt (ancestor), Wayne Family',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/639.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '287',
+    name: 'Godzilla',
+    powerstats: {
+      intelligence: '44',
+      strength: '100',
+      speed: '54',
+      durability: '100',
+      power: '100',
+      combat: '20',
+    },
+    biography: {
+      'full-name': 'Gojira',
+      'alter-egos': 'No alter egos found.',
+      aliases: [
+        'Legendary Godzilla',
+        'King of the Monsters',
+        'Gigantis',
+        'Monster Zero-One',
+        'God of Destruction',
+        'Alpha Predator',
+      ],
+      'place-of-birth': '-',
+      'first-appearance': 'Godzilla (1954)',
+      publisher: '',
+      alignment: 'bad',
+    },
+    appearance: {
+      gender: '-',
+      race: 'Kaiju',
+      height: ["354'4", '108.0 meters'],
+      weight: ['200000000 lb', '90,000 tons'],
+      'eye-color': '-',
+      'hair-color': '-',
+    },
+    work: {
+      occupation: '-',
+      base: '-',
+    },
+    connections: {
+      'group-affiliation': '-',
+      relatives: '-',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/10590.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '322',
+    name: 'Hellboy',
+    powerstats: {
+      intelligence: '63',
+      strength: '53',
+      speed: '21',
+      durability: '95',
+      power: '73',
+      combat: '75',
+    },
+    biography: {},
+    appearance: {
+      gender: 'Male',
+      race: 'Demon',
+      height: ["8'6", '259 cm'],
+      weight: ['350 lb', '158 kg'],
+      'eye-color': 'Gold',
+      'hair-color': 'Black',
+    },
+    work: {
+      occupation: '-',
+      base: '-',
+    },
+    connections: {
+      'group-affiliation':
+        'Abe Sapien, Liz Sherman, Roger the Homunculus, Savage Dragon, the Goon, Batman, Starman, Ghost, Painkiller Jane, Lobster Johnson, Torch of Liberty',
+      relatives:
+        'Catherine Tanner-Tremaine (mother, deceased), two unnamed maternal half-siblings (deceased), Professor Trevor Bruttenholm (foster father)',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/813.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '325',
+    name: 'Hercules',
+    powerstats: {
+      intelligence: '63',
+      strength: '100',
+      speed: '46',
+      durability: '85',
+      power: '89',
+      combat: '100',
+    },
+    biography: {
+      'full-name': 'Heracles',
+      'alter-egos': 'No alter egos found.',
+      aliases: [
+        'Spider-Herc',
+        'The Lion of Olympus',
+        'The Defender of Olympus',
+        'The Scion of Olympus',
+        'Prince of Power',
+        'Alcaeus',
+        'Herakles',
+        'Herc',
+        'Harry Cleese',
+        'Victor Tegler',
+        'Agent 74',
+      ],
+      'place-of-birth': 'Thebes, Greece',
+      'first-appearance': '-',
+      publisher: 'Marvel Comics',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Demi-God',
+      height: ["6'5", '196 cm'],
+      weight: ['325 lb', '146 kg'],
+      'eye-color': 'Blue',
+      'hair-color': 'Brown',
+    },
+    work: {
+      occupation:
+        'Adventurer, Olympian God of Strength and Labor, later Olympian God of Heroes',
+      base: 'Brooklyn; formerly Infinite Avengers Mansion, Mount Olympus, Avengers Mansion, Hydrobase',
+    },
+    connections: {
+      'group-affiliation':
+        'Formerly God Squad, Council of Godheads, Olympia Corp., Mighty Avengers, Renegades, Secret Avengers, Avengers, Champions of Los Angeles, Defenders, Heroes for Hire, Damage Control, Olympian Gods, Argonauts, Defenders for a Day',
+      relatives: '-',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/78.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '208',
+    name: 'Darth Vader',
+    powerstats: {
+      intelligence: '69',
+      strength: '48',
+      speed: '33',
+      durability: '35',
+      power: '100',
+      combat: '100',
+    },
+    biography: {
+      'full-name': 'Anakin Skywalker',
+      'alter-egos': 'No alter egos found.',
+      aliases: ['Lord Vader'],
+      'place-of-birth': 'Tatooine',
+      'first-appearance': 'Star Wars: Episode IV - A New Hope (1977)',
+      publisher: 'George Lucas',
+      alignment: 'bad',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Cyborg',
+      height: ["6'6", '198 cm'],
+      weight: ['300 lb', '135 kg'],
+      'eye-color': 'Yellow',
+      'hair-color': 'No Hair',
+    },
+    work: {
+      occupation: 'Sith Lord, Supreme Commander of the Imperial Fleet',
+      base: 'Death Star',
+    },
+    connections: {
+      'group-affiliation': 'Sith, Galactic Empire',
+      relatives: 'Luke Skywalker (Son), Princess Leia (Daughter)',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/10444.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '386',
+    name: 'Killer Croc',
+    powerstats: {
+      intelligence: '19',
+      strength: '53',
+      speed: '35',
+      durability: '90',
+      power: '53',
+      combat: '60',
+    },
+    biography: {
+      'full-name': 'Waylon Jones',
+      'alter-egos': 'No alter egos found.',
+      aliases: ['-'],
+      'place-of-birth': '-',
+      'first-appearance': 'Batman #357 (March, 1983)',
+      publisher: 'DC Comics',
+      alignment: 'bad',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Metahuman',
+      height: ["8'0", '244 cm'],
+      weight: ['790 lb', '356 kg'],
+      'eye-color': 'Red',
+      'hair-color': 'No Hair',
+    },
+    work: {
+      occupation: '-',
+      base: 'Gotham City',
+    },
+    connections: {
+      'group-affiliation': 'Secret Society of Super-Villains',
+      relatives: '-',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/723.jpg',
+    },
+  } /*0000000000000000000000000000000000000000000000000000000000000000000000000000000000*/,
+  {
+    response: 'success',
+    id: '346',
+    name: 'Iron Man',
+    powerstats: {
+      intelligence: '100',
+      strength: '85',
+      speed: '58',
+      durability: '85',
+      power: '100',
+      combat: '64',
+    },
+    biography: {
+      'full-name': 'Tony Stark',
+      'alter-egos': 'No alter egos found.',
+      aliases: [
+        'Iron Knight',
+        'Hogan Potts',
+        'Spare Parts Man',
+        'Cobalt Man II',
+        'Crimson Dynamo',
+        'Ironman',
+      ],
+      'place-of-birth': 'Long Island, New York',
+      'first-appearance': 'Tales of Suspence #39 (March, 1963)',
+      publisher: 'Marvel Comics',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Human',
+      height: ["6'6", '198 cm'],
+      weight: ['425 lb', '191 kg'],
+      'eye-color': 'Blue',
+      'hair-color': 'Black',
+    },
+    work: {
+      occupation:
+        'Inventor, Industrialist; former United States Secretary of Defense',
+      base: 'Seattle, Washington',
+    },
+    connections: {
+      'group-affiliation':
+        'Avengers, Illuminati, Stark Resilient; formerly S.H.I.E.L.D., leader of Stark Enterprises, the Pro-Registration Superhero Unit, New Avengers, Mighty Avengers, Hellfire Club, Force Works, Avengers West Coast, United States Department of Defense.',
+      relatives:
+        'Howard Anthony Stark (father, deceased), Maria Stark (mother, deceased), Morgan Stark (cousin), Isaac Stark (ancestor)',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/85.jpg',
+    },
+  },
+  {
+    response: 'success',
+    id: '65',
+    name: 'Batgirl III',
+    powerstats: {
+      intelligence: 'null',
+      strength: '43',
+      speed: 'null',
+      durability: 'null',
+      power: 'null',
+      combat: 'null',
+    },
+    biography: {
+      'full-name': 'Helena Rosa Bertinelli',
+      'alter-egos': 'Huntress',
+      aliases: ['-'],
+      'place-of-birth': '-',
+      'first-appearance': '-',
+      publisher: 'Huntress',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Female',
+      race: 'null',
+      height: ['-', '0 cm'],
+      weight: ['- lb', '0 kg'],
+      'eye-color': '-',
+      'hair-color': '-',
+    },
+    work: {
+      occupation: '-',
+      base: '-',
+    },
+    connections: {
+      'group-affiliation': '-',
+      relatives: '-',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/1112.jpg',
+    },
+  },
+  {
+    response: 'success',
+    id: '468',
+    name: 'Monarch',
+    powerstats: {
+      intelligence: 'null',
+      strength: '100',
+      speed: 'null',
+      durability: 'null',
+      power: 'null',
+      combat: 'null',
+    },
+    biography: {
+      'full-name': 'Nathaniel Christopher Adam',
+      'alter-egos': 'No alter egos found.',
+      aliases: ['Monarch', 'Allen Adam', 'Cameron Scott', 'Captain Atom'],
+      'place-of-birth': '-',
+      'first-appearance': 'Captain Atom #1 (D.C., March, 1987)',
+      publisher: 'DC Comics',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'null',
+      height: ["6'4", '193 cm'],
+      weight: ['200 lb', '90 kg'],
+      'eye-color': 'Blue',
+      'hair-color': 'White',
+    },
+    work: {
+      occupation:
+        'Adventurer, former U.S. Special Agent, former U.S. Air Force Captain',
+      base: '-',
+    },
+    connections: {
+      'group-affiliation':
+        'formally Justice League, Extreme Justice, Super Buddies, L.A.W., United States Air Force',
+      relatives:
+        'Angela Adams (wife, deceased), Margaret Eiling (daughter), Randall Eiling (son)',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/1006.jpg',
+    },
+  },
+  {
+    response: 'success',
+    id: '69',
+    name: 'Batman',
+    powerstats: {
+      intelligence: '81',
+      strength: '40',
+      speed: '29',
+      durability: '55',
+      power: '63',
+      combat: '90',
+    },
+    biography: {
+      'full-name': 'Terry McGinnis',
+      'alter-egos': 'No alter egos found.',
+      aliases: [
+        'Batman II',
+        'The Tomorrow Knight',
+        'The second Dark Knight',
+        'The Dark Knight of Tomorrow',
+        'Batman Beyond',
+      ],
+      'place-of-birth': 'Gotham City, 25th Century',
+      'first-appearance': 'Batman Beyond #1',
+      publisher: 'DC Comics',
+      alignment: 'good',
+    },
+    appearance: {
+      gender: 'Male',
+      race: 'Human',
+      height: ["5'10", '178 cm'],
+      weight: ['170 lb', '77 kg'],
+      'eye-color': 'Blue',
+      'hair-color': 'Black',
+    },
+    work: {
+      occupation: '-',
+      base: '21st Century Gotham City',
+    },
+    connections: {
+      'group-affiliation': 'Batman Family, Justice League Unlimited',
+      relatives:
+        'Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)',
+    },
+    image: {
+      url: 'https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg',
+    },
+  },
+];
+export default heros;
