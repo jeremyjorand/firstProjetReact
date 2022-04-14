@@ -1,7 +1,6 @@
 import SFighter from './style';
 
 function Fighter(props) {
-  console.log(props);
   return (
     <SFighter bg={props.image}>
       <section className='globalFighter pictureBat'>

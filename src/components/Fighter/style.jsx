@@ -8,7 +8,6 @@ export default styled.div`
     height: 30rem;
     margin: 1rem 1rem;
     border-radius: 5px;
-    background-size: 130%;
     background: url(${(props) => props.bg});
   }
   /* .pictureBat {
@@ -93,6 +92,7 @@ export default styled.div`
     border: 10px ridge rgba(122, 35, 35, 0.781);
     margin-top: 3rem;
     padding-top: 0.5rem;
+    white-space: nowrap;
   }
   span {
   }
@@ -110,7 +110,7 @@ export default styled.div`
     font-size: 1rem;
   }
   ul li {
-    font-size: 1.4rem;
+    font-size: 1.2vw;
     margin: 0.2rem 0;
   }
 `;
