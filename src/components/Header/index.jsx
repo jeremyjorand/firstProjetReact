@@ -14,8 +14,8 @@ function Header() {
         <Link to='/PictureChoice'>Choix d'image</Link>
         <Link to='/Form'>Formulaire</Link>
         <Link to='/PierreFeilleCiseaux'>Pierre - Feuille - Ciseaux</Link>
-        <Link to='/Ring'>Carte Heros</Link>
-        <Link to='/Fight'>Combat</Link>
+        <Link to='/Gallery'>Carte Heros</Link>
+        <Link to='/Ring'>- VS -</Link>
       </nav>
     </SHeader>
   );
