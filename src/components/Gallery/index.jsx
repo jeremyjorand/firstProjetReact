@@ -1,6 +1,6 @@
 import SGallery from './style';
 import Fighter from '../Fighter';
-import heros from '../Data/data';
+import heros from '../DataOfficiel/dataOfficiel';
 
 export default function Gallery() {
   return (
@@ -14,9 +14,9 @@ export default function Gallery() {
             strength={hero.powerstats.strength}
             speed={hero.powerstats.speed}
             power={hero.powerstats.power}
-            fullName={hero.biography['full-name']}
+            fullName={hero.biography.fullName}
             race={hero.appearance.race}
-            image={hero.image.url}
+            // image={hero.images.xs}
           />
         );
       })}

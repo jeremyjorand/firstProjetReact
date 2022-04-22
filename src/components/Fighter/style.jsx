@@ -9,6 +9,8 @@ export default styled.div`
     margin: 1rem 1rem;
     border-radius: 5px;
     background: url(${(props) => props.bg});
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   /* .pictureBat {
     background-image: url('https://www.superherodb.com/pictures2/portraits/10/100/639.jpg');
@@ -111,6 +113,7 @@ export default styled.div`
   }
   ul li {
     font-size: 1.2vw;
+    max-width: 100%;
     margin: 0.2rem 0;
   }
 `;

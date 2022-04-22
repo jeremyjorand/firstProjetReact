@@ -7,6 +7,7 @@ import Fight from './components/Fight';
 import PictureChoice from './components/PictureChoice';
 import { Route, Routes } from 'react-router-dom';
 import Ring from './components/Ring';
+import Burger from './components/Burger';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/Fight' element={<Fight />} />
         <Route path='/PictureChoice' element={<PictureChoice />} />
         <Route path='/Ring' element={<Ring />} />
+        <Route path='/Burger' element={<Burger />} />
       </Routes>
     </SGlobal>
   );

@@ -16,6 +16,7 @@ function Header() {
         <Link to='/PierreFeilleCiseaux'>Pierre - Feuille - Ciseaux</Link>
         <Link to='/Gallery'>Carte Heros</Link>
         <Link to='/Ring'>- VS -</Link>
+        <Link to='Burger'>Burger</Link>
       </nav>
     </SHeader>
   );

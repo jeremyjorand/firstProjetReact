@@ -1,5 +1,5 @@
 import SFight from './style';
-import heros from '../Data/data';
+import heros from '../DataOfficiel/dataOfficiel';
 import { useEffect, useState } from 'react';
 import Fighter from '../Fighter';
 /** */
@@ -55,7 +55,7 @@ function Fight() {
             /**surveille la valeur de la second liste */
             const id = evt.target.value;
             const hero = heros.filter((h) => {
-              return id === h.id;
+              return parseInt(id) === h.id;
             })[0];
             setCurrCharacter(hero);
           }}
@@ -102,9 +102,9 @@ function Fight() {
           strength={currCharacter.powerstats.strength}
           speed={currCharacter.powerstats.speed}
           power={currCharacter.powerstats.power}
-          fullName={currCharacter.biography['full-name']}
+          fullName={currCharacter.biography.fullName}
           race={currCharacter.appearance.race}
-          image={currCharacter.image.url}
+          // image={currCharacter.images.xs}
         />
       )}
     </SFight>

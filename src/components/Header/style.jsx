@@ -11,6 +11,7 @@ export default styled.div`
 
     h1 {
       font-size: 3em;
+      margin: 1rem 0;
     }
     img {
       width: 6rem;
@@ -23,6 +24,19 @@ export default styled.div`
     a {
       margin: 2rem;
       text-transform: uppercase;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    section h1 {
+      font-size: 1.5rem;
+    }
+    nav {
+      text-align: start;
+      a {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+      }
     }
   }
 `;
