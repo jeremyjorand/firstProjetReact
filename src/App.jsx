@@ -8,6 +8,8 @@ import PictureChoice from './components/PictureChoice';
 import { Route, Routes } from 'react-router-dom';
 import Ring from './components/Ring';
 import Burger from './components/Burger';
+import UniversUseParams from './components/UnivesUseParams';
+import Test from './components/Test';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/PictureChoice' element={<PictureChoice />} />
         <Route path='/Ring' element={<Ring />} />
         <Route path='/Burger' element={<Burger />} />
+        <Route path='/univers' element={<UniversUseParams />} />
+        <Route path='/univers/:univers' element={<Test />} />
       </Routes>
     </SGlobal>
   );

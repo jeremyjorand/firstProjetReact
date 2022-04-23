@@ -1,6 +1,6 @@
 import SFight from './style';
 import heros from '../DataOfficiel/dataOfficiel';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Fighter from '../Fighter';
 /** */
 const categories = ['Marvel', 'DC', 'StarWars', 'Manga', 'Autre'];

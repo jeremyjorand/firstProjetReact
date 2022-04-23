@@ -5602,7 +5602,7 @@ const heros = [
       hairColor: '-',
     },
     biography: {
-      fullName: 'Dmitri Anatoly Smerdyakov Kravinoff',
+      fullName: 'Dmitri Anatoly Smerdyakov',
       alterEgos: 'No alter egos found.',
       aliases: [
         'Dr. Ashley Kafka',
