@@ -35,9 +35,21 @@ function Test() {
           {heros
             .filter((hero) => {
               const publisher = hero.biography.publisher || '';
-              return publisher
-                .toLocaleLowerCase()
-                .includes(data[univers].categ);
+              const categA = [
+                'Marvel Comics',
+                'DC Comics',
+                'George Lucas',
+                'Shueisha',
+              ];
+              if (data[univers].categ === 'autre') {
+                return !categA.some((cat) => {
+                  return publisher === cat;
+                });
+              }
+              return (
+                publisher === data[univers].categ ||
+                publisher.toLocaleLowerCase().includes(data[univers].categ)
+              );
             })
             .map((hero) => {
               return (
